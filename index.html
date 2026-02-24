@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Brew Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <h1 class="logo">Luna Brew</h1>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#map">Visit</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="book">
+        <div class="hero-bg-shape shape-1"></div>
+        <div class="hero-bg-shape shape-2"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Artisan coffee • handcrafted moments</p>
+            <h2>Modern Cafe Vibes with a 3D Twist</h2>
+            <p>
+              Sip, work, and unwind in a cozy-yet-futuristic space designed for dreamers,
+              creators, and coffee lovers.
+            </p>
+            <div class="hero-actions">
+              <a href="#reservation" class="btn btn-primary">Book Now</a>
+              <a href="#menu" class="btn btn-secondary">View Menu</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="cup-3d">
+              <div class="steam steam-1"></div>
+              <div class="steam steam-2"></div>
+              <div class="steam steam-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about container" id="about">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h3>Where craft meets comfort</h3>
+        </div>
+        <p>
+          Luna Brew is a concept cafe blending premium single-origin coffee, minimalist design,
+          and immersive interiors. We focus on quality ingredients, warm service, and a peaceful
+          atmosphere for every guest.
+        </p>
+      </section>
+
+      <section class="menu-section container" id="menu">
+        <div class="section-head">
+          <p class="eyebrow">Our menu</p>
+          <h3>Hover to explore the circle of flavors</h3>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-ring"></div>
+            <h4>Signature Lattes</h4>
+            <p>Velvety, aromatic blends with artistic latte pours.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-ring"></div>
+            <h4>Cold Brews</h4>
+            <p>Slow-steeped coffee with bright, smooth notes.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-ring"></div>
+            <h4>Bakery & Desserts</h4>
+            <p>Fresh croissants, cheesecakes, and seasonal treats.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-ring"></div>
+            <h4>Tea Collection</h4>
+            <p>Organic herbal and classic infusions for calm moments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reservation container" id="reservation">
+        <div>
+          <p class="eyebrow">Book your table</p>
+          <h3>Reserve your corner at Luna Brew</h3>
+        </div>
+        <form class="reservation-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Date
+            <input type="date" required />
+          </label>
+          <label>
+            Time
+            <input type="time" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+        </form>
+      </section>
+
+      <section class="map container" id="map">
+        <div class="section-head">
+          <p class="eyebrow">Find us</p>
+          <h3>Visit the cafe</h3>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            title="Cafe location map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.128%2C51.507%2C-0.108%2C51.517&amp;layer=mapnik"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <div class="chatbot" id="chatbot">
+      <button class="chatbot-toggle" aria-label="Open AI chatbot">☕ AI Chat</button>
+      <div class="chatbot-panel" aria-live="polite">
+        <div class="chatbot-header">Luna AI Assistant</div>
+        <div class="chatbot-messages" id="chatMessages">
+          <div class="bot-msg">Hi! Ask me about menu, timings, or bookings.</div>
+        </div>
+        <form class="chatbot-input" id="chatForm">
+          <input type="text" id="chatInput" placeholder="Type your question..." required />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 Luna Brew Cafe • Designed for modern comfort.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
